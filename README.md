@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+Interactive Payment Provider Workflow
+This project is an interactive, visually dynamic workflow management tool built using the React Flow library with TypeScript. It allows users to add, manage, and visualize payment provider nodes like Google Pay, Apple Pay, Stripe, and more. The tool supports interactions such as dragging, resizing, deleting, connecting nodes, undo/redo functionality, and saving/loading the workflow state. It is designed to help users customize and manage their payment provider workflows seamlessly.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Features
+Bonus Features
+Installation
+Usage
+Technologies Used
+Project Structure
+Future Improvements
+Contributing
+License
+Features
+Add Payment Provider Node:
 
-## Available Scripts
+Add unique payment provider nodes (Google Pay, Stripe, Apple Pay, etc.) from a dropdown list.
+Duplicate nodes are prevented.
+Delete Node:
 
-In the project directory, you can run:
+Each node has a delete button (an “X” icon) for easy removal of nodes.
+Drag and Drop:
 
-### `npm start`
+Nodes can be dragged and repositioned within the canvas in real-time for a smoother interaction.
+Node Resizing:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Nodes can be resized for customization, allowing users to increase or decrease their size.
+Node Connection Validation:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Ensure logical connections between nodes (e.g., a Payment Initialization node can only connect to a valid payment provider).
+Invalid connections are visually highlighted.
+Conditional Styling:
 
-### `npm test`
+Dynamic styling based on conditions. For instance, the Payment Initialized node color changes if the payment amount exceeds a certain threshold.
+Display Payment Initialization:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Payment initialization nodes display relevant information like payment amounts.
+Undo/Redo:
 
-### `npm run build`
+Users can undo or redo recent actions (node addition, deletion, resizing, dragging) to enhance flexibility.
+Save and Load Workflow:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Save the current workflow state (nodes, connections) to local storage.
+Load the saved workflow to restore all nodes, connections, and layouts.
+Validation:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Prevent users from adding duplicate payment provider nodes. An error message is displayed when a duplicate is attempted.
+Auto Layout:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Automatically arrange nodes to avoid overlap and clutter.
+Manual trigger for auto-layout is available.
