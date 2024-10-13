@@ -1,0 +1,28 @@
+.main_container {
+    position: absolute;
+    top: 20px;
+    /* Adjust the position according to your needs */
+    left: 20px;
+    z-index: 10;
+    /* Ensure it's above ReactFlow elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--theme-bg-color);
+    flex-wrap: wrap;
+}
+
+
+.save_work_flow_main_container {
+    border-radius: 1rem;
+    padding: 1rem;
+    /* height: 50vh; */
+    width: 30vw;
+    overflow: hidden;
+    background-color: var(--theme-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

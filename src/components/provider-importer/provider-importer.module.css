@@ -1,0 +1,13 @@
+.main_container {
+    width: 200px;
+    background-color: var(--theme-disabled-bg-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 0.1rem
+}
+
+.main_container>select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}

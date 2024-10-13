@@ -1,0 +1,14 @@
+:root {
+  --theme-bg-color: #ffffff;
+  --theme-text-color: #000;
+  --theme-disabled-bg-color: rgb(209, 209, 209);
+  --theme-disabled-text-color: black;
+  --theme-text-size: 0.70rem;
+  --theme-heading-size: 0.80rem;
+  --theme-bg-color-red: rgb(245, 62, 62);
+  --theme-color-blue: rgb(90, 90, 244);
+}
+
+* {
+  font-family: sans-serif;
+}
